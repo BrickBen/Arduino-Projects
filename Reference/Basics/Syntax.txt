@@ -1,0 +1,182 @@
+FUNCTIONS
+For controlling the Arduino board and performing computations.
+
+Digital I/O
+digitalRead() 
+digitalWrite() 
+pinMode() 
+Analog I/O
+analogRead() 
+analogReference() 
+analogWrite() 
+Zero, Due & MKR Family
+analogReadResolution() 
+analogWriteResolution() 
+Advanced I/O
+noTone() 
+pulseIn() 
+pulseInLong() 
+shiftIn() 
+shiftOut() 
+tone() 
+Time
+delay() 
+delayMicroseconds() 
+micros() 
+millis() 
+Math
+abs() 
+constrain() 
+map() 
+max() 
+min() 
+pow() 
+sq() 
+sqrt() 
+Trigonometry
+cos() 
+sin() 
+tan() 
+Characters
+isAlpha() 
+isAlphaNumeric() 
+isAscii() 
+isControl() 
+isDigit() 
+isGraph() 
+isHexadecimalDigit() 
+isLowerCase() 
+isPrintable() 
+isPunct() 
+isSpace() 
+isUpperCase() 
+isWhitespace() 
+Random Numbers
+random() 
+randomSeed() 
+Bits and Bytes
+bit() 
+bitClear() 
+bitRead() 
+bitSet() 
+bitWrite() 
+highByte() 
+lowByte() 
+External Interrupts
+attachInterrupt() 
+detachInterrupt() 
+Interrupts
+interrupts() 
+noInterrupts() 
+Communication
+Serial 
+stream 
+USB
+Keyboard 
+Mouse 
+VARIABLES
+Arduino data types and constants.
+
+Constants
+Floating Point Constants 
+Integer Constants 
+HIGH | LOW 
+INPUT | OUTPUT | INPUT_PULLUP 
+LED_BUILTIN 
+true | false 
+
+Conversion
+byte() 
+char() 
+float() 
+int() 
+long() 
+word() 
+Data Types
+String 
+String() 
+array 
+bool 
+boolean 
+byte 
+char 
+double 
+float 
+int 
+long 
+short 
+unsigned char 
+unsigned int 
+unsigned long 
+void 
+word 
+Variable Scope & Qualifiers
+const 
+scope 
+static 
+volatile 
+Utilities
+PROGMEM 
+sizeof() 
+STRUCTURE
+The elements of Arduino (C++) code.
+
+Sketch
+loop() 
+setup() 
+Control Structure
+break 
+continue 
+do...while 
+else 
+for 
+goto 
+if...else 
+return 
+switch...case 
+while 
+Further Syntax
+#define (define) 
+#include (include) 
+/* */ (block comment) 
+// (single line comment) 
+; (semicolon) 
+{} (curly braces) 
+Arithmetic Operators
+% (remainder) 
+* (multiplication) 
++ (addition) 
+- (subtraction) 
+/ (division) 
+= (assignment operator) 
+Comparison Operators
+!= (not equal to) 
+< (less than) 
+<= (less than or equal to) 
+== (equal to) 
+> (greater than) 
+>= (greater than or equal to) 
+Boolean Operators
+! (logical not) 
+&& (logical and) 
+|| (logical or) 
+Pointer Access Operators
+& (reference operator) 
+* (dereference operator) 
+Bitwise Operators
+& (bitwise and) 
+<< (bitshift left) 
+>> (bitshift right) 
+^ (bitwise xor) 
+| (bitwise or) 
+~ (bitwise not) 
+Compound Operators
+&= (compound bitwise and) 
+*= (compound multiplication) 
+++ (increment) 
++= (compound addition) 
+-- (decrement) 
+-= (compound subtraction) 
+/= (compound division) 
+^= (compound bitwise xor) 
+|= (compound bitwise or) 
