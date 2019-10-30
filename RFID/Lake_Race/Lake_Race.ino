@@ -6,8 +6,10 @@
 #define RST_PIN 9
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 int nums[]={1,2,3,4,5,6};
-String uids[] = {"FB 27 44 1C","AB DF 56 1C","CB 87 4A 1C","s","s","s"};
+String uids[] = {"FB 27 44 1C","AB DF 56 1C","CB 87 4A 1C","87 5B 6F 3C","E7 B6 48 3B","27 87 26 3B"};
 int questionNumberArray[] ={1,2,3,4,5,6};
+long startTime = millis();
+bool complete = true;
 void reseedRandom( void )
 {
   static const uint32_t HappyPrime = 937;
@@ -64,7 +66,7 @@ for (int i=0; i < questionCount; i++) {
 
 int loopCounter = 0;
 void loop() {
-if(loopCounter != 6){
+if((loopCounter != 6 && millis() <= 210000) || !complete){
   int first = questionNumberArray[0];
   int second = questionNumberArray[1];
   int third = questionNumberArray[2];
@@ -110,7 +112,15 @@ if(loopCounter != 6){
     }
     
   }else{
-    Serial.println("Finished");
+    if(millis() >= 210000){
+    Serial.println("Time ran out, reset to start over");
+    complete = true;
+    delay(100000000);
+  }else{
+    Serial.println("Complete, the password is ...");
+    complete = true;
+    delay(10000000);
   }
 
+  }
 }
